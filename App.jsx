@@ -125,43 +125,6 @@ const styles = `
       background-position: 200% 0;
     }
   }
-
-  /* Glass button base style - applied site-wide to buttons and nav links */
-  .glass-btn, button {
-    backdrop-filter: blur(8px) saturate(140%);
-    -webkit-backdrop-filter: blur(8px) saturate(140%);
-    background: linear-gradient(180deg, rgba(255,255,255,0.12), rgba(255,255,255,0.06));
-    border: 1px solid rgba(255,255,255,0.18);
-    box-shadow: 0 8px 24px rgba(2,6,23,0.12), inset 0 1px 0 rgba(255,255,255,0.25);
-    color: inherit;
-    transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
-    border-radius: 12px;
-  }
-
-  .glass-btn:hover, button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 36px rgba(2,6,23,0.16), inset 0 1px 0 rgba(255,255,255,0.28);
-  }
-
-  /* Black/glossy modifier - keep base color but add glossy highlights */
-  .glass-black, .glass-btn.bg-black, button.bg-black {
-    background: linear-gradient(180deg, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.9) 50%, rgba(0,0,0,0.85) 100%);
-    border: 1px solid rgba(255,255,255,0.06);
-    box-shadow: 0 12px 36px rgba(0,0,0,0.45), inset 0 2px 6px rgba(255,255,255,0.05);
-  }
-
-  .glass-black::after {
-    content: '';
-    position: absolute;
-    left: 6px;
-    right: 6px;
-    top: 6px;
-    height: 40%;
-    border-radius: 10px;
-    background: linear-gradient(180deg, rgba(255,255,255,0.12), rgba(255,255,255,0.02));
-    pointer-events: none;
-    mix-blend-mode: overlay;
-  }
   
   @keyframes invertColors {
     0%, 5%, 100% {
@@ -494,13 +457,13 @@ const icons = {
 
 const navItems = [
   { icon: null, label: 'Home' },
-  { icon: null, label: 'Services' },
-  { icon: null, label: 'The Studio' },
-  { icon: null, label: 'About' },
-  { icon: icons.dollar, label: 'Pricing' },
   { icon: icons.gallery, label: 'Gallery' },
+  { icon: null, label: 'Services' },
+  { icon: null, label: 'About' },
   { icon: icons.phone, label: 'Contact' },
+  { icon: null, label: 'The Studio' },
   { icon: null, label: 'Blog' },
+  { icon: icons.dollar, label: 'Pricing' },
   { icon: null, label: 'What to Expect' },
   { icon: null, label: 'FAQ & Policy' },
 ];
@@ -618,7 +581,7 @@ const App = () => {
                   <button
                 key={label} 
                     onClick={() => setActivePage(label)}
-                    className={`glass-btn group relative px-3 md:px-5 py-2 md:py-2.5 rounded-xl font-medium text-xs md:text-sm transition-all duration-300 ease-out ${
+                    className={`group relative px-3 md:px-5 py-2 md:py-2.5 rounded-xl font-medium text-xs md:text-sm transition-all duration-300 ease-out ${
                       isActive
                         ? 'text-black'
                         : 'text-gray-700 hover:text-black'

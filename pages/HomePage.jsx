@@ -37,22 +37,20 @@ const HomePage = () => {
               <button
                 onClick={() => setCarouselIndex((i) => (i - 1 + carouselImages.length) % carouselImages.length)}
                 aria-label="Previous"
-                className="absolute left-4 top-1/2 -translate-y-1/2 glass-btn p-3 rounded-full"
-                style={{
-                  transform: 'translateY(-50%)',
-                }}
+                className="absolute left-4 top-1/2 -translate-y-1/2 glass-btn p-0 rounded-full flex items-center justify-center w-12 h-12"
               >
-                ‹
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+                  <path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
               </button>
               <button
                 onClick={() => setCarouselIndex((i) => (i + 1) % carouselImages.length)}
                 aria-label="Next"
-                className="absolute right-4 top-1/2 -translate-y-1/2 glass-btn p-3 rounded-full"
-                style={{
-                  transform: 'translateY(-50%)',
-                }}
+                className="absolute right-4 top-1/2 -translate-y-1/2 glass-btn p-0 rounded-full flex items-center justify-center w-12 h-12"
               >
-                ›
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+                  <path d="M9 6l6 6-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
               </button>
             </div>
           </div>

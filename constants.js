@@ -9,7 +9,7 @@ export const NAV_LINKS = [
   { path: '/photography', title: 'Gallery' },
   { path: '/contact', title: 'Contact' },
   { path: '/blog', title: 'Blog' },
-  { path: '/what-to-expect', title: 'What to Expect' },
+  { path: '/what-to-expect', title: 'What To Expect' },
   { path: '/faq-and-policy', title: 'FAQ & Policy' },
 ];
 
