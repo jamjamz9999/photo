@@ -25,16 +25,21 @@ const HomePage = () => {
 
   return (
     <div className="bg-white text-gray-900">
-      {/* Hero Section with Gradient Background */}
-      <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-gray-900 overflow-hidden">
-        <div className="absolute inset-0 opacity-30">
-          <div className="absolute top-0 left-1/4 w-96 h-96 bg-gradient-to-br from-purple-500/20 to-transparent rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-gradient-to-tl from-blue-500/20 to-transparent rounded-full blur-3xl"></div>
+      {/* Hero Section with White to Blue Gradient */}
+      <section className="relative bg-gradient-to-br from-white via-blue-50 to-blue-100 overflow-hidden">
+        {/* Glossy gradient overlays */}
+        <div className="absolute inset-0 pointer-events-none overflow-hidden">
+          {/* Radial glossy shine effect */}
+          <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-radial from-white/30 to-transparent rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-gradient-radial from-blue-200/20 to-transparent rounded-full blur-3xl"></div>
+          
+          {/* Subtle glossy effect */}
+          <div className="absolute inset-0 bg-gradient-to-b from-white/40 via-transparent to-blue-50/20"></div>
         </div>
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 pt-16 sm:pt-20 md:pt-28 pb-16 sm:pb-20 md:pb-28">
           <div className="grid gap-8 sm:gap-12 lg:gap-16 lg:grid-cols-[1fr,1fr] items-center">
-            {/* Left Side - Two Images with Glass UI Containers */}
+            {/* Left Side - Images */}
             <div className="relative w-full max-w-3xl mx-auto order-2 lg:order-1">
               <div className="rounded-3xl overflow-hidden shadow-2xl">
                 <AnimatedViewer photos={carouselImages} interval={4500} height="620px" />
@@ -42,17 +47,17 @@ const HomePage = () => {
             </div>
 
             {/* Right Side - Text Content */}
-            <div className="space-y-6 sm:space-y-8 order-1 lg:order-2 text-white">
+            <div className="space-y-6 sm:space-y-8 order-1 lg:order-2 text-gray-900">
               <div className="space-y-4 sm:space-y-6">
-                <div className="inline-block px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20">
-                  <p className="text-xs sm:text-sm font-semibold text-cyan-300">✨ Jinette Ramos • Best Photographer in Allentown</p>
+                <div className="inline-block px-4 py-2 rounded-full bg-blue-100/80 backdrop-blur-md border border-blue-200">
+                  <p className="text-xs sm:text-sm font-semibold text-blue-700">✨ Jinette Ramos • Best Photographer in Allentown</p>
                 </div>
                 <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight flex items-center gap-3 sm:gap-4 flex-wrap">
                   <span>Storytelling</span>
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400">Portraits</span>
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400">Portraits</span>
                   <span className="inline-flex items-center gap-2 sm:gap-3">
                     <span>&</span>
-                    <svg className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 text-cyan-400 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 text-blue-600 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <rect x="4" y="7" width="16" height="12" rx="2" fill="currentColor"/>
                       <rect x="5" y="8" width="14" height="10" rx="1.5" fill="white" opacity="0.2"/>
                       <circle cx="12" cy="13" r="4" fill="currentColor"/>
@@ -65,18 +70,18 @@ const HomePage = () => {
                     </svg>
                   </span>
                 </h1>
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white/90">Cinematic Moments</h2>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-700">Cinematic Moments</h2>
               </div>
               
-              <p className="text-base sm:text-lg text-white/80 leading-relaxed max-w-lg">
+              <p className="text-base sm:text-lg text-gray-700 leading-relaxed max-w-lg">
                 Hi, I'm Jinette Ramos, a portrait photographer, faith-filled creative, and proud mom of seven. I specialize in capturing families, expecting moms, newborns, couples, and seniors with a warm, timeless touch and editorial elegance.
               </p>
               
               <div className="flex gap-4 pt-6">
-                <button className="px-8 py-3 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300">
+                <button className="px-8 py-3 rounded-lg bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold hover:shadow-lg hover:shadow-blue-500/50 transition-all duration-300">
                   Book a Session
                 </button>
-                <button className="px-8 py-3 rounded-lg border-2 border-white/30 text-white font-semibold hover:bg-white/10 transition-all duration-300">
+                <button className="px-8 py-3 rounded-lg border-2 border-blue-300 text-blue-700 font-semibold hover:bg-blue-50 transition-all duration-300">
                   View Portfolio
                 </button>
               </div>
