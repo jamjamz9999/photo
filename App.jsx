@@ -285,13 +285,13 @@ const styles = `
   .split-image-left {
     width: calc(50% - 10px);
     height: 100%;
-    background: url('/jinette/images/JRP_0485.jpg') center/cover no-repeat;
+    background: url('/photo/images/JRP_0485.jpg') center/cover no-repeat;
   }
 
   .split-image-right {
     width: calc(50% - 10px);
     height: 100%;
-    background: url('/jinette/images/JRP_0501.jpg') center/cover no-repeat;
+    background: url('/photo/images/JRP_0501.jpg') center/cover no-repeat;
   }
 
   /* Gallery image breathing brightness animation */
