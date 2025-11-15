@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { GALLERY_PHOTOS } from '../constants.js';
 import asset from '../src/utils/assets';
+import AnimatedViewer from '../components/AnimatedViewer';
 
 const HomePage = () => {
   const [carouselIndex, setCarouselIndex] = useState(0);
@@ -29,31 +30,7 @@ const HomePage = () => {
         <div className="grid gap-8 sm:gap-12 lg:gap-14 lg:grid-cols-[1fr,1fr] items-center">
           {/* Left Side - Two Images with Glass UI Containers */}
           <div className="relative w-full max-w-3xl mx-auto order-2 lg:order-1">
-            <div className="relative rounded-2xl overflow-hidden shadow-xl">
-              <img
-                src={carouselImages[carouselIndex]?.src || carouselImages[carouselIndex]?.thumbnail}
-                alt={carouselImages[carouselIndex]?.title || 'Gallery preview'}
-                className="w-full h-[420px] sm:h-[520px] md:h-[620px] object-cover"
-              />
-              <button
-                onClick={() => setCarouselIndex((i) => (i - 1 + carouselImages.length) % carouselImages.length)}
-                aria-label="Previous"
-                className="absolute left-4 top-1/2 -translate-y-1/2 glass-btn p-0 rounded-full flex items-center justify-center w-12 h-12"
-              >
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                  <path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </button>
-              <button
-                onClick={() => setCarouselIndex((i) => (i + 1) % carouselImages.length)}
-                aria-label="Next"
-                className="absolute right-4 top-1/2 -translate-y-1/2 glass-btn p-0 rounded-full flex items-center justify-center w-12 h-12"
-              >
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                  <path d="M9 6l6 6-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </button>
-            </div>
+            <AnimatedViewer photos={carouselImages} interval={4500} height="620px" />
           </div>
 
           {/* Right Side - Text Content */}
