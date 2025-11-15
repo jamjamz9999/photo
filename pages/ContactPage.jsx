@@ -49,7 +49,33 @@ const ContactPage = () => {
             </div>
           </div>
 
-          {/* Get In Touch Section */}
+        </div>
+      </section>
+
+      {/* Location / Visit Me - moved to top under header/nav */}
+      <section className="pb-12 px-8 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex justify-center">
+            <div className="text-center">
+              <div className="mb-6 flex justify-center">
+                <svg className="w-12 h-12 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+              </div>
+              <h3 className="text-lg font-semibold mb-3 text-black">Visit Me</h3>
+              <p className="text-xl font-bold text-black">
+                Allentown, Pennsylvania<br />USA
+              </p>
+              <p className="text-gray-500 text-sm mt-2">Available for travel</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Get In Touch Section */}
+      <section className="min-h-[50vh] sm:min-h-[60vh] bg-gradient-to-b from-gray-50 to-white flex items-center justify-center px-4 sm:px-6 md:px-8 py-6 sm:py-8 md:py-10">
+        <div className="max-w-6xl mx-auto">
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-gray-500 text-xs sm:text-sm uppercase tracking-widest font-semibold mb-4 sm:mb-6">Get In Touch</p>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 sm:mb-8 leading-tight text-black">
@@ -131,7 +157,7 @@ const ContactPage = () => {
             <div className="pt-6 sm:pt-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
               <button
                 type="submit"
-                className="inline-flex items-center justify-center bg-black text-white font-bold py-3 sm:py-4 px-8 sm:px-12 rounded-none hover:bg-gray-900 transition-colors duration-200 uppercase tracking-widest text-sm sm:text-base md:text-lg border-2 border-black hover:border-gray-900 w-full md:w-auto"
+                className="inline-flex items-center justify-center bg-black text-white font-bold py-3 sm:py-4 px-8 sm:px-12 rounded-none hover:bg-gray-900 transition-colors duration-200 uppercase tracking-widest text-sm sm:text-base md:text-lg border-2 border-black hover:border-gray-900 w-full md:w-auto glass-black"
               >
                 Send Message
               </button>

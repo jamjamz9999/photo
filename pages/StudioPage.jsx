@@ -1,4 +1,5 @@
 import React from 'react';
+import asset from '../src/utils/assets';
 
 const StudioPage = () => {
   const amenities = [
@@ -29,7 +30,7 @@ const StudioPage = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-black">Our Spaces</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Two distinct studio environments, each designed to create stunning photography
+              A versatile, professional studio designed to support editorial portraits, product work, and creative commercial shoots. We provide elegant spaces, professional equipment, and a calm environment to make your session effortless.
             </p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
@@ -37,7 +38,7 @@ const StudioPage = () => {
               <div className="rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 bg-white">
                 <div className="relative h-96 overflow-hidden">
                   <img
-                    src="/images/Pictures/DSC00207.jpg"
+                    src={asset('/images/Pictures/DSC00207.jpg')}
                     alt="Main studio"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
@@ -56,7 +57,7 @@ const StudioPage = () => {
               <div className="rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 bg-white">
                 <div className="relative h-96 overflow-hidden">
                   <img
-                    src="/images/Pictures/DSC00790.jpg"
+                    src={asset('/images/Pictures/DSC00790.jpg')}
                     alt="Natural light studio"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
@@ -96,9 +97,9 @@ const StudioPage = () => {
           
           {/* CTA Section */}
           <div className="text-center mt-16">
-            <div className="inline-block">
+            <div className="inline-block relative">
               <button 
-                className="animated-gradient-btn text-lg px-12 py-4"
+                className="animated-gradient-btn text-lg px-12 py-4 glass-black"
                 onClick={() => {
                   const contactSection = document.querySelector('[data-page="Contact"]');
                   if (contactSection) {
@@ -114,7 +115,7 @@ const StudioPage = () => {
               </button>
             </div>
             <p className="mt-6 text-gray-600">
-              Ready to create something beautiful? Let's discuss your photography needs.
+              Our studio packages include wardrobe guidance, on-site styling, access to props, and full retouching options. Contact us to customize a package that matches your creative vision.
             </p>
           </div>
         </div>

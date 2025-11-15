@@ -455,5 +455,40 @@ Successful macro photographers invest in specialized equipment like macro lenses
 
 Successful photographers use social media strategically, sharing work that represents their style and values, engaging authentically with their audience, and using platforms to tell stories beyond individual images. They understand that social media is a tool, not the goal, and they maintain their artistic integrity while building their online presence.`,
   },
+  {
+    id: 101,
+    title: 'Meet Jinette Ramos: A Portrait of the Photographer',
+    slug: 'meet-jinette-ramos-profile',
+    category: 'Profile',
+    date: 'November 15, 2025',
+    readTime: '5 min read',
+    image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=1200&q=80',
+    excerpt: 'An introduction to Jinette Ramos — Allentown-based portrait photographer who blends editorial vision with heartfelt storytelling.',
+    content: `Jinette Ramos is a portrait photographer based in Allentown, Pennsylvania. Known for her warm, editorial style and thoughtful approach, Jinette focuses on creating images that feel both timeless and intimate. With a background in studio lighting and a passion for working with families and individuals, she brings a calm, creative energy to every session.
+
+Jinette's work emphasizes connection: she spends time understanding each client's story and uses light, posing, and color to create photographs that feel personal and enduring. Outside the studio, Jinette is active in her local community and mentors aspiring photographers through workshops and one-on-one sessions.`,
+  },
+  {
+    id: 102,
+    title: 'Photography Across America: Small Town Portraits',
+    slug: 'photography-across-america-small-town-portraits',
+    category: 'American Stories',
+    date: 'November 10, 2025',
+    readTime: '6 min read',
+    image: 'https://images.unsplash.com/photo-1504198453319-5ce911bafcde?auto=format&fit=crop&w=1200&q=80',
+    excerpt: 'A look at how portrait photography captures the character of small towns across the U.S.',
+    content: `From Main Street storefronts to quiet back porches, small towns across America carry visual stories that portrait photography can reveal. This post explores practical approaches to working in variable light, connecting with local subjects, and creating work that feels rooted in place.`,
+  },
+  {
+    id: 103,
+    title: 'Editing for American Light: A Practical Guide',
+    slug: 'editing-for-american-light',
+    category: 'How To',
+    date: 'November 08, 2025',
+    readTime: '7 min read',
+    image: 'https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&w=1200&q=80',
+    excerpt: 'Tips for editing photos shot under the varied light conditions common across the United States.',
+    content: `Lighting conditions vary from Atlantic haze to high desert contrast. This guide breaks down color grading choices, exposure strategies, and local approaches to skin tones that help your images feel authentic to the place where they were made.`,
+  },
 ];
 

@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { GALLERY_PHOTOS } from '../constants.js';
 
 const HomePage = () => {
-  const primaryImages = GALLERY_PHOTOS.slice(0, 2);
+  const [carouselIndex, setCarouselIndex] = useState(0);
+  const carouselImages = GALLERY_PHOTOS.slice(0, 10);
   const featuredCollections = [
     {
       title: 'Editorial Portraits',
@@ -26,68 +27,34 @@ const HomePage = () => {
       <section className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 pt-12 sm:pt-16 md:pt-20 pb-16 sm:pb-20 md:pb-28">
         <div className="grid gap-8 sm:gap-12 lg:gap-14 lg:grid-cols-[1fr,1fr] items-center">
           {/* Left Side - Two Images with Glass UI Containers */}
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-[5px] order-2 lg:order-1">
-            <button
-              className="relative group cursor-pointer w-full sm:w-auto"
-              style={{
-                backdropFilter: 'blur(20px)',
-                WebkitBackdropFilter: 'blur(20px)',
-                background: 'rgba(255, 255, 255, 0.1)',
-                border: '1px solid rgba(255, 255, 255, 0.2)',
-                borderRadius: '16px',
-                padding: '6px sm:8px',
-                boxShadow: '0 8px 32px 0 rgba(0, 0, 0, 0.1)',
-                transition: 'all 0.3s ease',
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = 'translateY(-8px)';
-                e.currentTarget.style.boxShadow = '0 12px 40px 0 rgba(0, 0, 0, 0.15)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = 'translateY(0)';
-                e.currentTarget.style.boxShadow = '0 8px 32px 0 rgba(0, 0, 0, 0.1)';
-              }}
-            >
-              <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] overflow-hidden rounded-xl">
-                <img
-                  src="/images/JRP_0485.jpg"
-                  alt="Photography work"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
-              </div>
-            </button>
-            
-            <button
-              className="relative group cursor-pointer w-full sm:w-auto"
-              style={{
-                backdropFilter: 'blur(20px)',
-                WebkitBackdropFilter: 'blur(20px)',
-                background: 'rgba(255, 255, 255, 0.1)',
-                border: '1px solid rgba(255, 255, 255, 0.2)',
-                borderRadius: '16px',
-                padding: '6px sm:8px',
-                boxShadow: '0 8px 32px 0 rgba(0, 0, 0, 0.1)',
-                transition: 'all 0.3s ease',
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = 'translateY(-8px)';
-                e.currentTarget.style.boxShadow = '0 12px 40px 0 rgba(0, 0, 0, 0.15)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = 'translateY(0)';
-                e.currentTarget.style.boxShadow = '0 8px 32px 0 rgba(0, 0, 0, 0.1)';
-              }}
-            >
-              <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] overflow-hidden rounded-xl">
-                <img
-                  src="/images/JRP_0501.jpg"
-                  alt="Photography work"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
-              </div>
-            </button>
+          <div className="relative w-full max-w-3xl mx-auto order-2 lg:order-1">
+            <div className="relative rounded-2xl overflow-hidden shadow-xl">
+              <img
+                src={carouselImages[carouselIndex]?.src || carouselImages[carouselIndex]?.thumbnail}
+                alt={carouselImages[carouselIndex]?.title || 'Gallery preview'}
+                className="w-full h-[420px] sm:h-[520px] md:h-[620px] object-cover"
+              />
+              <button
+                onClick={() => setCarouselIndex((i) => (i - 1 + carouselImages.length) % carouselImages.length)}
+                aria-label="Previous"
+                className="absolute left-4 top-1/2 -translate-y-1/2 glass-btn p-3 rounded-full"
+                style={{
+                  transform: 'translateY(-50%)',
+                }}
+              >
+                ‹
+              </button>
+              <button
+                onClick={() => setCarouselIndex((i) => (i + 1) % carouselImages.length)}
+                aria-label="Next"
+                className="absolute right-4 top-1/2 -translate-y-1/2 glass-btn p-3 rounded-full"
+                style={{
+                  transform: 'translateY(-50%)',
+                }}
+              >
+                ›
+              </button>
+            </div>
           </div>
 
           {/* Right Side - Text Content */}

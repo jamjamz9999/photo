@@ -2,12 +2,15 @@ import asset from './src/utils/assets';
 
 export const NAV_LINKS = [
   { path: '/', title: 'Home' },
-  { path: '/about', title: 'About' },
-  { path: '/experience', title: 'The Experience' },
-  { path: '/photography', title: 'Portfolio' },
-  { path: '/investment', title: 'Investment' },
+  { path: '/services', title: 'Services' },
   { path: '/studio', title: 'The Studio' },
+  { path: '/about', title: 'About' },
+  { path: '/pricing', title: 'Pricing' },
+  { path: '/photography', title: 'Gallery' },
   { path: '/contact', title: 'Contact' },
+  { path: '/blog', title: 'Blog' },
+  { path: '/what-to-expect', title: 'What to Expect' },
+  { path: '/faq-and-policy', title: 'FAQ & Policy' },
 ];
 
 export const GALLERY_PHOTOS = [
