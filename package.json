@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://jamjamz9999.github.io/jinette",
+  "homepage": "https://jamjamz9999.github.io/photo",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
