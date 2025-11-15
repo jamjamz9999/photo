@@ -59,7 +59,7 @@ const ServicesPage = () => {
   const featuredWork = GALLERY_PHOTOS.slice(0, 4);
 
   return (
-    <div className="bg-white text-gray-900">
+    <div className="bg-gradient-to-br from-white via-blue-50 to-blue-100 text-gray-900">
       <section className="max-w-6xl mx-auto px-6 lg:px-10 pt-20 pb-24">
         <div className="grid gap-10 lg:grid-cols-[1.05fr,0.95fr] items-center">
           <div className="space-y-6">
@@ -101,7 +101,7 @@ const ServicesPage = () => {
         </div>
       </section>
 
-      <section id="collections" className="bg-gray-50 py-20">
+      <section id="collections" className="bg-white/60 backdrop-blur-sm py-20">
         <div className="max-w-6xl mx-auto px-6 lg:px-10">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
             <div>

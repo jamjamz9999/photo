@@ -41,7 +41,7 @@ const PricingPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+    <div className="min-h-screen bg-gradient-to-br from-white via-blue-50 to-blue-100">
       {/* Hero Section */}
       <section className="py-24 px-8 bg-white">
         <div className="max-w-6xl mx-auto text-center">

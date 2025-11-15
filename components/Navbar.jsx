@@ -36,8 +36,8 @@ const Navbar = forwardRef((props, ref) => {
                   key={link.path}
                   to={link.path}
                   className={({ isActive }) =>
-                    `text-sm font-semibold tracking-wider uppercase px-5 py-5 rounded-full ${
-                      isActive ? 'bg-black text-white' : 'text-gray-600'
+                    `text-sm navbar-font tracking-wider uppercase px-5 py-5 rounded-full transition-all ${
+                      isActive ? 'bg-black text-white' : 'text-gray-600 hover:text-black'
                     }`
                   }
                 >

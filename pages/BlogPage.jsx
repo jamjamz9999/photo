@@ -545,9 +545,9 @@ Successful photographers use social media strategically, sharing work that repre
   };
 
   return (
-    <div className="min-h-screen bg-white text-[#1a1a1a]">
+    <div className="min-h-screen bg-gradient-to-br from-white via-blue-50 to-blue-100 text-gray-900">
       {/* Hero Header */}
-      <header className="bg-white border-b border-gray-200">
+      <header className="bg-white/80 backdrop-blur-sm border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
           <div className="text-center max-w-4xl mx-auto">
             <p className="text-sm uppercase tracking-[0.3em] text-gray-500 mb-4 font-medium">Photography Blog</p>
