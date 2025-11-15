@@ -2,34 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Responsive Scaling - Fixed Design Width at 1920px */
-html {
-  /* Design width is 1920px, scale everything based on actual viewport */
-  font-size: calc((100vw / 1920) * 16px);
-  overflow-x: hidden;
-}
-
-body {
-  width: 100vw;
-  height: 100vh;
-  overflow-x: hidden;
-  transform-origin: top center;
-  margin: 0;
-  padding: 0;
-}
-
-#root {
-  width: 100vw;
-  min-height: 100vh;
-  overflow-x: hidden;
-}
-
-/* Disable user scaling to ensure fixed proportions */
-@viewport {
-  width: device-width;
-  zoom: 1;
-}
-
 /* Custom fonts and typography */
 .fredericka-the-great-regular {
   font-family: 'Fredericka the Great', serif;
