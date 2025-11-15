@@ -58,8 +58,8 @@
         animation: polaroid-drop-kf 10s infinite ease-out;
       }
     </style>
-  <script type="module" crossorigin src="/photo/assets/index-DrWDQnUO.js"></script>
-  <link rel="stylesheet" crossorigin href="/photo/assets/index-BRHLU4Rv.css">
+  <script type="module" crossorigin src="/photo/assets/index-BTU91guU.js"></script>
+  <link rel="stylesheet" crossorigin href="/photo/assets/index-C8X7vYb6.css">
 </head>
   <body>
     <div id="root"></div>
