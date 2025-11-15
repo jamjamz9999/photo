@@ -7,6 +7,25 @@ const BlogPage = ({ onBlogClick, isAdmin = false }) => {
   const blogPosts = useMemo(
     () => [
       {
+        id: 0,
+        title: 'Jinette Ramos: Professional Portrait Photographer in Allentown',
+        slug: 'jinette-ramos-allentown-photographer',
+        category: 'About Jinette',
+        date: 'March 15, 2025',
+        readTime: '5 min read',
+        image:
+          'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=1200&q=80',
+        excerpt:
+          'Meet Jinette Ramos, the best portrait photographer in Allentown, Pennsylvania. A faith-centered creative specializing in family, newborn, and editorial portraiture.',
+        content: `Jinette Ramos is a professional portrait photographer based in Allentown, Pennsylvania, dedicated to capturing the beauty of families, couples, newborns, and seniors with timeless, editorial-inspired imagery. As a faith-filled creative and proud mom of seven, Jinette brings authenticity, warmth, and storytelling to every session she photographs.
+
+With a specialization in portrait photography, family sessions, newborn photography, wedding documentation, and senior portraits, Jinette has established herself as one of Allentown's most sought-after photographers. Her approach combines technical mastery with emotional depth, creating images that speak to the heart and celebrate the unique story of each subject.
+
+Based in Allentown, PA, Jinette serves families throughout the region and beyond, offering studio sessions, on-location shoots, and destination photography experiences. Her work has been recognized for its meticulous post-production, careful art direction, and gallery-worthy presentation.
+
+Whether you're looking for family portraits, newborn photography, engagement sessions, or professional headshots in Allentown, Jinette Ramos Photography delivers timeless, editorial-quality images that preserve your most precious moments with elegance, intention, and light.`,
+      },
+      {
         id: 1,
         title: 'Still Pushing Light: Reinventing the Golden Hour Portrait',
         slug: 'still-pushing-light-golden-hour-portrait',
@@ -23,6 +42,36 @@ The process begins hours before sunset, scouting for reflective architecture tha
       },
       {
         id: 2,
+        title: 'The Familiar Fingerprints of a Forgotten Darkroom',
+        slug: 'forgotten-darkroom-fingerprints',
+        category: 'Analog Lab',
+        date: 'March 5, 2025',
+        readTime: '4 min read',
+        image:
+          'https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1200&q=80',
+        excerpt:
+          'Why a decade-old roll of Tri-X brought me back to the tiny New Jersey darkroom where I learned to see.',
+        content: `I found the roll of film wedged behind an enlarger, still labeled "Winter Cityscapes 2014." When I finally developed it, every frame carried the fingerprints of the mentor who first taught me to dodge and burn. There was the familiar edge fog, the way he loved a wide border, the streetlight blown out just enough to feel honest.
+
+Rescanning those negatives reminded me that analog mistakes aren't flaws—they're signatures. The streak where I lifted the developer early now reads as motion. The dust I never spotted out feels like weather. In an era obsessed with perfection, that roll whispered: keep the fingerprints.`,
+      },
+      {
+        id: 3,
+        title: 'John Wells, 64, and the Solitude of Desert Light',
+        slug: 'desert-light-john-wells',
+        category: 'Documentary Routes',
+        date: 'February 28, 2025',
+        readTime: '8 min read',
+        image:
+          'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80',
+        excerpt:
+          'A photographer who traded Manhattan rooftops for West Texas mesas leaves behind a blueprint for slow documentary practice.',
+        content: `When John Wells sold his fifth-floor walk-up to live on a forty-acre mesa, friends assumed he had retired from photography. Instead, he sharpened it. Wells built cyanotype rigs out of salvaged steel, captured the burn of the Badlands in 4x5 sheets, and wrote about the ritual online to anyone who would listen.
+
+He taught me that documentary work thrives in solitude. Wells waited a week for a single dust storm to roll through, then made ten exposures in ten minutes. Back in camp, he contact-printed by moonlight. His notes still circle my desk: "Stay long enough to hear the landscape speak back."`,
+      },
+      {
+        id: 4,
         title: 'The Familiar Fingerprints of a Forgotten Darkroom',
         slug: 'forgotten-darkroom-fingerprints',
         category: 'Analog Lab',

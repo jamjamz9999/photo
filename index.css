@@ -25,7 +25,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('/jinette/images/header.png') center/cover no-repeat;
+  background: url('/photo/images/header.png') center/cover no-repeat;
   background-size: 125%;
   animation: moveBackgroundSmooth 25s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
   z-index: 0;
