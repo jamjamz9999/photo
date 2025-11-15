@@ -45,7 +45,7 @@ const Footer = ({ onAdminClick }) => {
       <footer 
         className="footer-animated-bg relative py-12 px-8 text-white overflow-hidden"
         style={{
-          backgroundImage: 'url(/images/footerbg.png)',
+          backgroundImage: 'url(/photo/images/footerbg.png)',
           backgroundSize: '150%',
           backgroundPosition: '0% 0%',
           backgroundAttachment: 'scroll',
@@ -77,8 +77,8 @@ const Footer = ({ onAdminClick }) => {
             {/* Center - Social Icons */}
             <div className="flex justify-center gap-4 sm:gap-6 justify-self-center w-full">
               {[
-                { href: 'https://instagram.com', src: '/images/instagram.png', alt: 'Instagram' },
-                { href: 'https://facebook.com', src: '/images/facebook.png', alt: 'Facebook' },
+                { href: 'https://instagram.com', src: '/photo/images/instagram.png', alt: 'Instagram' },
+                { href: 'https://facebook.com', src: '/photo/images/facebook.png', alt: 'Facebook' },
               ].map((icon) => (
                 <a
                   key={icon.alt}
